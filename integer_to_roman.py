@@ -21,12 +21,14 @@ class Solution(object):
             900: "CM",
             1000: "M",
         }
-        l = list(mapping.keys())[::-1]
+        l = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
         result = ""
         for a in l:
             while num>=a:
                 num -= a
                 result += mapping[a]
         return result
+                
+        
                 
         
